@@ -14,8 +14,7 @@ let sinopse= new Array("Quando um garoto desaparece, a cidade toda participa nas
 
 
 
-function currentSlide(Nr) {	 
-	var Num = Nr;
+function currentSlide(Nr) {
 	var vImagem =  pasta+array1[Nr];
 	//document.getElementById('ImgDest').src =  vImagem; 	
 	document.getElementById('destaque').style.backgroundImage = "url("+vImagem+")";
@@ -43,13 +42,14 @@ function mais(){
 function menos(){
 	document.form.texto.value = Math.floor (1+ 1 - 2 + (document.form.texto.value) * 1 -1)
 	if (document.form.texto.value < 0){
-		document.form.texto.value = cont-1;
+		//document.form.texto.value = cont-1;
+		document.form.texto.value = cont;
 	};
 }
 
 function regular(){
 	var X = document.form.texto.value;
-	var vImagem =pasta+array1[X];
+	var vImagem = pasta+array1[X];
 	//document.getElementById('ImgDest').src = pasta+array1[X];
 	document.getElementById('destaque').style.backgroundImage= "url("+vImagem+")";	
 	document.getElementById('titulo').innerHTML = titulo[X];
