@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+   index.html   
+   Copyright 2021 Marcelo Antônio Pacífico Cavalcanti
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Snake Game</title>
+	<meta name="Autor" content="Marcelo Antônio Pacífico Cavalcanti" />
+	<link rel="shortcut icon" href="img/ksnake_24.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body onload="inicio()" >
+	<div class="tabuleiro">
+		<h1>Jogo da Cobrinha (Snake Game)</h1>		
+<!-- 		<canvas id="snake" width="512" height="512"></canvas> -->
+		<canvas id="snake" width="570" height="570"></canvas>
+	</div>
+	<div class= 'score'>
+		<label>Pontos: <span id="placar"></span></label>
+		<br/>
+		<label>Tempo: <span id= "tempo"></span></label>
+	</div>
+
+<!--    <script type="text/javascript" src="js/snake.js"></script> -->
+
+	<script defer src="js/script.js"></script>
+
+</body>
+
+</html>
