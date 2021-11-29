@@ -1,2 +1,2 @@
-CSS
-Configurações do jogo
+# CSS
+Configurações da página do jogo
