@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="shortcut icon" href="icon_hr.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Gênis</title>
+</head>
+<body>
+	<label id='titulo'>Jogo da Memória - Gênis</label>
+	<div class="main-game">
+		<div class="outer circle shapeborder">		
+			<div class="blue quarter-size"></div>
+			<div class="yellow quarter-size"></div>
+			<div class="green quarter-size"></div>	 		
+			<div class="red quarter-size"></div>
+		</div>			
+		<div class="inner circle shapeborder">
+			<div>
+				<form id="formulario">
+					<p id="p0">Dificuldade</p>
+					<div class="selecao" id="selecao" >
+						<input type="radio" id="op_1" value=1 >
+						<label >Fácil</label>
+						<input type="radio" id="op_2" value=2 >
+						<label >Médio</label>
+						<input type="radio" id="op_3" value=3 >
+						<label >Difícil</label>
+					</div>
+				</form>	
+				<button class="botao" id="btn" onclick="playGame()">Iniciar</button>	
+			</div>
+		</div>			
+	</div>
+	<footer class='rodape'>
+		<label id="placar">Pontos:</label>
+		<label id="cores">Sequência: </label>
+	</footer>
+   <script type="text/javascript" src="script.js"></script>      
+ </body>
+</html>

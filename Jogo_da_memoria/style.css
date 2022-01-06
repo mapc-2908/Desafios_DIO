@@ -1,0 +1,160 @@
+
+body {
+   margin: 0;
+   background-color: rgb(208, 255, 239);
+	font-family: Arial, Times, 'Times New Roman', sans-serif;	
+	font-size: 20px;  	
+}
+
+.main-game {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.quarter-size{
+	width: 15.45em;
+   height: 97.5%;
+	border: 5px solid; 
+
+}
+
+.blue {
+   grid-area: azul;
+   background-color: blue;
+   border-bottom-right-radius: 100%;
+}
+
+.yellow {
+   grid-area: amarelo;
+   background-color: yellow;
+   border-bottom-left-radius: 100%;
+}
+
+.green {
+   grid-area: verde;
+   background-color: green;
+   border-top-left-radius: 100%;  
+}
+
+.red {
+   grid-area: vermelho;
+   background-color: red;
+   border-top-right-radius: 100%;
+}
+
+.selected{
+	opacity: 0.5;	
+}
+
+.shapeborder { border: 2px solid black; }
+
+.circle { 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%; 
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.outer {
+   display: grid;
+   grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+   grid-gap: 20px;
+	background-color: white;
+	width:662px; /* You can define it by % also */
+	height:662px; /* You can define it by % also */
+	position:relative; 
+	border:5px solid black;
+	padding: 0;
+
+}
+
+.inner {
+	background-color: black;
+	/* top: 25%; left:25%; */  /* of the container */
+	width:250px; /* of the container */
+	height:250px; /* of the container */
+	position: absolute;
+	border:2px solid black;
+	/* border-radius: 50%; */
+}
+
+#formulario{
+   margin-top: 20%;
+	font-size: 20px;  
+	color: white;
+}
+
+#p0{
+   display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 30%;
+}
+
+
+.botao {		
+	font-size: 20px;    
+	font-variant: bold;
+	border-radius:5px;
+   margin-top: 50px;    
+   margin-left: 35%;   
+   background-color: white;
+}
+
+
+.score{
+	display: block;
+	position: absolute;  
+	padding: 5px;
+	background-color: black;
+	/*border: 1px solid;*/
+	color: white;
+	font-variant: bold;
+	font-size: 20px;
+	margin: auto;
+/* 	top: 30%; 
+	right: -150%; */
+}
+
+label {    
+   line-height: 28px;
+}
+
+input {
+   border-radius: 50%;
+   width: 14px;
+   height: 14px;
+   transition: 0.2s all linear; 
+}
+
+.rodape{
+	background-color: black;
+	border: 1px solid;
+	color: white;
+	font-variant: bold;
+	font-size: 20px;
+	margin-top: 10px;	
+	padding: 5px;
+}
+
+#cores{
+	/*  text-indent: 50px; */
+	margin-left: 200px;
+}
+
+#titulo{
+	display: flex;
+	background-color: black;
+	border: 1px solid;
+	color: white;
+	font-variant: bold;
+	font-size: 20px;	
+	justify-content: center;
+	align-items: center;	
+}
